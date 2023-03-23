@@ -74,3 +74,42 @@ alfabeto <- c('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', '
 class(alfabeto)
 
 print(paste0(alfabeto[1], alfabeto[12], alfabeto[7], alfabeto[5], alfabeto[2], alfabeto[18], alfabeto[1]))
+
+
+#####################################
+####### OPERAÇÕES COM VETORES #######
+#####################################
+
+# Criação de Vetores
+u <- c(2, -4, 1)
+u
+
+v <- c(3, 2, -5)
+v
+
+# Soma vetorial
+soma <- u + v
+soma
+
+# Produto
+produto <- u * v
+produto
+
+# Produto interno
+produto_interno <- u %*% v
+produto_interno
+
+# Multiplicação por um escalar
+multiplicacao <- 5*u
+multiplicacao
+
+multiplicacao2 <- 5*v
+multiplicacao2
+
+prod_int <- (5*u) %*% (3*v)
+prod_int
+
+#######################
+
+# Norma
+print(u)
