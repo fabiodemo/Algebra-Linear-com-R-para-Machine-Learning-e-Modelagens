@@ -113,3 +113,26 @@ prod_int
 
 # Norma
 print(u)
+norm(u, type = "2")
+
+print(v)
+norm(v, type = "2")
+
+w = c(2, 4, 6, 8, 10, 12)
+norm(w, type = "2")
+round(norm(w, type = "2"))
+
+# Distância
+# Criação de uma função para distância
+dist <- function (vetor1, vetor2) {
+    soma_quad = 0
+    for (i in 1:length(u)){
+        soma_quad = soma_quad+(u[i] - v[i]) ** 2
+    }
+    dist = soma_quad ** (1/2)
+}
+
+# Calculando a distância entre vetores
+distancia <- dist(u, v)
+distancia
+print(paste0("A distância entre os vetores é: ", round(distancia, 2)))
