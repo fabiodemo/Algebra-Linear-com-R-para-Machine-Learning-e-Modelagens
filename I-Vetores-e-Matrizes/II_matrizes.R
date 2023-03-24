@@ -195,3 +195,83 @@ multEF
 
 multFE <- matrizF %*% matrizE # non-conformable arguments
 multFE
+
+
+#############################################
+####### MATRIZ INVERSA E DETERMINANTE #######
+#############################################
+
+matrizA <- matrix(c(2, 5, 1, 3), nrow=2, byrow=TRUE)
+matrizA
+
+matrizB <- matrix(c(3, -5, -1, 2), nrow=2, byrow=TRUE)
+matrizB
+
+mult <- matrizA %*% matrizB
+mult
+
+mult <- matrizB %*% matrizA
+mult
+
+# MATRIZ INERSA
+matriz_invA <- solve(matrizA)
+matriz_invA
+matrizB
+
+matriz_invB <- solve(matrizB)
+matriz_invB
+matrizA
+
+matrizC <- matrix(c(-11, 2, 2, -4, 0, 1, 6, -1, -1), nrow=3, byrow=TRUE)
+matrizC
+
+matriz_invC <- solve(matrizC)
+matriz_invC
+
+mult <- matrizC %*% matriz_invC # Resulta em erros computacionais com valores próximos de 0
+mult 
+
+matrizD <- matrix(c(1, 2, 3, 4, 5, 6, 7, 8, 9), nrow=3, byrow=TRUE)
+matrizD
+
+matriz_invD <- solve(matrizD) # system is computationally singular: reciprocal condition number = 1.54198e-18 
+
+# DETERMINANTE
+matrizE <- matrix(c(1, 3, 2, 4, 2, 4, 3, 1, 5), nrow=3, byrow=TRUE)
+matrizE
+
+detE <- det(matrizE)
+detE
+
+matrizF <- matrix(c(2, 4, 3, 8), nrow=2, byrow=TRUE)
+matrizF
+
+detF <- det(matrizF)
+detF
+
+matrizG <- matrix(c(1, 2, 3, 4, 5, 6, 7, 8, 9), nrow=3, byrow=TRUE)
+matrizG
+
+detG <- det(matrizG)
+detG # Aproximadamente zero, então podemos considerá-la zero para efeitos de cálculos
+
+matrizH <- matrix(c(1, 3, 0, -2, 1,
+                    4, 2, 4, 5, 4,
+                    0, 1, 5, -3, 2,
+                    -2, 3, 1, 0, 7,
+                    0, 1, 9, 3, 2), nrow=5, byrow=TRUE)
+matrizH
+
+detH <- det(matrizH)
+detH
+
+
+matrizI <- matrix(c(1, 3, 0, -2, 1,
+                    4, 2, 4, 5, 4,
+                    0, 1, 5, -3, 2), nrow=3, byrow=TRUE)
+matrizI
+
+detI <- det(matrizI) # error: 'x' must be a square matrix
+detI
+
+
