@@ -138,4 +138,60 @@ soma_colunas
 ####### OPERAÇÕES COM MATRIZES #######
 ######################################
 
+matrizA <- matrix(c(2, -3, 4, -6, 6, 9), nrow=3, ncol=2, byrow=TRUE)
+matrizA
+
+matrizB <- matrix(c(1, 7, -3, 4, 5, -8), nrow=3, ncol=2, byrow=TRUE)
+matrizB
+
 # ADIÇÃO E SUBTRAÇÃO DE MATRIZES
+somaAB <- matrizA + matrizB
+somaAB
+
+somaBA <- matrizB + matrizA
+somaBA
+
+# SUBTRAÇÃO DE MATRIZES
+subAB <- matrizA - matrizB
+subAB
+
+subBA <- matrizB - matrizA
+subBA
+
+# MULTIPLICAÇÃO DE MATRIZES POR UM ESCALAR
+matrizA
+mult1 <- 2 * matrizA
+mult1
+
+matrizB
+mult2 <- 2 * matrizB
+mult2
+
+# MULTIPLICAÇÃO MATRICIAL
+produto_matriz <- matrizA %*% matrizB
+produto_matriz # Non-conformable arguments
+
+matrizC <- matrix(c(2, 1, 3, 4, 5, 6), nrow=3, ncol=2, byrow=TRUE)
+matrizC
+
+matrizD <- matrix(c(7, 8, 0, 10, 5, -2), nrow=2, ncol=3, byrow=TRUE)
+matrizD
+
+multCD <- matrizC %*% matrizD
+multCD
+
+multDC <- matrizD %*% matrizC
+multDC
+
+matrizE <- matrix(c(3, 1, 0, 4), nrow=2, byrow=TRUE)
+matrizE
+
+matrizF <- matrix(c(2, 6, -2, 3, 7, 5), nrow=2, byrow=TRUE)
+matrizF
+
+multEF <- matrizE %*% matrizF
+multEF
+
+
+multFE <- matrizF %*% matrizE # non-conformable arguments
+multFE
