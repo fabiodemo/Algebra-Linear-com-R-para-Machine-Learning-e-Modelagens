@@ -20,3 +20,5 @@ View(notas)
 # 20x + 120y = 7
 # 28x +  60y = 7.4
 # 20x + 150y = 9.3
+
+read_xlsx('concurso.xlsx')
