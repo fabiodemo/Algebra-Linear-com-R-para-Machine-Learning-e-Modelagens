@@ -1,5 +1,5 @@
 #################################################
-####### TRANSFORMAÇÃO LINEAR - ROTAÇÃO #######
+####### TRANSFORMAÇÃO LINEAR - ROTAÇÃO ##########
 #################################################
 
 # vetor que receberá a transformação
