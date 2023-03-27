@@ -7,7 +7,7 @@
 vetorC <- c(2, 2)
 print(vetorC)
 
-# Constante cisahante
+# Constante cisalhante
 k <- 3
 
 # Coordenadas
